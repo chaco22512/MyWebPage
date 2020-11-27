@@ -1,0 +1,182 @@
+@import url(../css/font.css);
+
+/* Preparation of novel fonts */
+:root{
+
+    /* theme font-family */
+    --Abel: 'Abel',cursive;
+    --Anton: 'Anton',cursive;
+    --Josefin: 'Josefin',cursive;
+    --Lexend: 'Lexend',cursive;
+    --Livvic: 'Livvic',cursive;
+}
+
+/* global styling */
+
+body{
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color:gray;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+h1{
+    font-family: var(--Josefin);
+    font-size:2.5rem ;
+}
+
+h2{
+    font-family:var(--Lexend) ;
+    font-size: 1.8rem;
+}
+
+h3{
+    font-family:var(--Lexend) ;
+    font-size: 1.2rem;
+}
+
+
+/* nav menu */
+.nav-menu{
+    background-color: white;
+    height: 0;
+    min-height: 10vh;
+    overflow: hidden;
+
+    /* for aimation */
+    transition: height 0.3s ease;
+}
+
+.nav-menu .nav-bland{
+    flex: 3;
+}
+
+.nav-bland >img{
+    width: 150px;
+    height: 80px;
+}
+
+.nav-menu .nav-item{
+    flex: 4%;
+}
+
+.nav-item .items{
+    padding: 2rem;
+}
+
+.nav-item .items:hover{
+    background-color: royalblue;
+}
+
+.nav-item .items:hover a{
+    color: white;
+}
+
+
+.nav-menu .social{
+    flex: 1;
+    padding: 2rem;
+}
+
+.social .bland{
+    padding: 0 .3rem;
+    font-size:1.2rem;
+}
+
+.social .bland a:hover{
+    color: blue;
+}
+
+.nav-menu .toggle-bar{
+    position: absolute;
+    top: 2%;
+    left: 90%;
+    display: none;
+    cursor: pointer;
+}
+
+.nav-menu .toggle-bar .toggle-icon:hover{
+    color: blue;
+}
+
+/* Additional class after toggle icon*/
+.collapse{
+    height: 17rem;
+}
+
+/* Main section */
+main .main{
+    background: url(../asset/2.jpg);
+    background-size: cover;
+    height: 876px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main .img-black{
+    background-color: rgba(0, 0, 0, 0.418);
+    width: 100%;
+    height: 876px;
+}
+
+.main h1,h2,h3{
+    color: white;
+    position: relative;
+    top: -500px;
+    text-align: center;
+}
+
+/* History section */
+main .history{
+    background: url(../asset/history.jpg);
+    background-repeat: none;
+    width: 100%;
+    height: 100vh;
+}
+
+.history .title-history>h1{
+    margin: 0;
+    padding-top: 8vh;
+    text-align: center;
+    color: whitesmoke;
+}
+
+/* Responsible design */
+@media screen and (max-width:770px){
+    .nav-menu .nav-item>ul{
+        flex-direction: column;
+    }
+
+    .nav-menu{
+        display: block;
+    }
+
+    .nav-item .items{
+        padding: 0.5rem;
+    }
+
+    .nav-menu .social{
+        padding: 1rem;
+    }
+
+    .nav-menu .toggle-bar{
+        display: initial;
+    }
+}
