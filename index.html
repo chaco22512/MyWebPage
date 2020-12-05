@@ -16,30 +16,23 @@
 
     <section class="header">
         <div class="nav-menu flex-row">
-
-            <div class="nav-bland">
+            <div class="nav-brand">
                 <img src="./asset/logo3.png" alt="logo">
             </div>
 
-            <div class="nav-item">
-                <ul>
-                    <li class="items"><a href="#">Home</a></li>
-                    <li class="items"><a href="#">History</a></li>
-                    <li class="items"><a href="#">Article</a></li>
-                    <li class="items"><a href="#">Memory</a></li>
-                </ul>
+            <ul class="nav-item">
+                <li class="items"><a href="#">Home</a></li>
+                <li class="items"><a href="#">History</a></li>
+                <li class="items"><a href="#">Article</a></li>
+                <li class="items"><a href="#">Memory</a></li>
+            </ul>
 
-            </div>
-
-            <div class="social">
-                <ul>
-                    <li class="bland"><a href="#"><i class="fab fa-facebook"></i></a></li>
-                    <li class="bland"><a href="#"><i class="fab fa-twitter"></i></a></li>
-                    <li class="bland"><a href="#"><i class="fab fa-instagram"></i></a></li>
-                    <li class="bland"><a href="#"><i class="fab fa-linkedin"></i></a></li>
-                </ul>
-
-            </div>
+            <ul class="social">
+                <li class="bland"><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li class="bland"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li class="bland"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li class="bland"><a href="#"><i class="fab fa-linkedin"></i></a></li>
+            </ul>
 
             <div class="toggle-bar">
                 <div class="toggle-icon">
@@ -52,8 +45,8 @@
     </section>
     <main>
         <section class="main">
-            <div class="site-background">
-                <div class="img-black"></div>
+            <div class="img-black"></div>
+            <div class="site-explanation">
                 <h1>Biomedical Engineer</h1>
                 <h2>From Osaka, Japan</h2>
                 <h2>Japanese/French/Spanish/English Speaker</h2>
@@ -62,13 +55,122 @@
         </section>
 
         <section class="History">
-            <div class="history">
-                <div class="title-history">
-                    <h1>My history</h1>
+            <h1 class="history-title">My history</h1>
+
+            <i class="fas fa-chevron-left prev"></i>
+            <i class="fas fa-chevron-right next"></i>
+
+            <div class="carousel">
+                <div class="post">
+                    <img src="./asset/History/MapOsaka.png" alt="Osaka" class="post-img">
+                    <div class="content-explanation">
+                        <h4>1. Osaka, Sakai</h4>
+                        <p>I was born in Sakai, Osaka at 1995, in which year there was huge earthquake near my hometown.
+                        </p>
+                    </div>
                 </div>
 
-                
+                <div class="post">
+                    <img src="./asset/History/Swimming.jpg" alt="Swimming" class="post-img">
+                    <div class="content-explanation">
+                        <h4>2. Swimming</h4>
+                        <p>I used to learn swimming together with my neighborfood friends, and sometimes I participated
+                            in competition of Sakai.
+                        </p>
+                    </div> 
+                </div>
+
+                <div class="post">
+                    <img src="./asset/History/Mountain.jpg" alt="Mountain" class="post-img">
+                    <div class="content-explanation">
+                        <h4>3. Mountain climbing</h4>
+                        <p>I loved nature thus together with my father, i used to climb a lot of mountains.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="post">
+                    <img src="./asset/History/tohokuU.jpg" alt="tohoku" class="post-img">
+                    <div class="content-explanation">
+                        <h4>4. Tohoku University, Sendai</h4>
+                        <p>I studied chemistry at Tohoku University as a bachelor.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="post">
+                    <img src="./asset/History/SERCA.png" alt="serca" class="post-img">
+                    <div class="content-explanation">
+                        <h4>5. Protein Engineering</h4>
+                        <p>As a research project, i worked the calcium ion pomp inside the cells by using multiple cellbiology methods(DNA/RNA manipulation, protein purification, cell culture...)
+                        </p>
+                    </div>
+                </div>
+
+                <div class="post">
+                    <img src="./asset/History/paris.jpg" alt="paris" class="post-img">
+                    <div class="content-explanation">
+                        <h4>6. Paris</h4>
+                        <p>I studied Biomedical Engineering at Paris Tech as a Master.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="post">
+                    <img src="./asset/History/bioimaging.jpg" alt="paris2" class="post-img">
+                    <div class="content-explanation">
+                        <h4>7. Bioimaging and Artifical inteligent</h4>
+                        <p>As internships in Paris, I belonged to three different laboratories (immunology, biophysics, and radiology). I performed multiple biological researches and implemented machine learning algorithms.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="post">
+                    <img src="./asset/History/granada.jpg" alt="granada" class="post-img">
+                    <div class="content-explanation">
+                        <h4>8. Volunteer in Granada</h4>
+                        <p>For learning Spanish, i worked in the orphanage located in Granada, Spain as volunteer work.
+                        </p>
+                    </div>
+                </div>
+
             </div>
+
+
+
+                <!-- <div class="history-content">
+                    <img src="./asset/History/MapOsaka.png" alt="Osaka" class="post-img">
+                    <div class="content-explanation">
+                        <h4>1.Osaka, Sakai</h4>
+                        <p>I was born in Sakai, Osaka at 1995, in which year there was huge earthquake near my hometown.
+                        </p>
+                    </div>
+                </div>
+                <div class="history-content">
+                    <img src="./asset/History/Swimming.jpg" alt="Swimming" class="post-img">
+                    <div class="content-explanation">
+                        <h4>2.Swimming</h4>
+                        <p>I used to learn swimming together with my neighborfood friends, and sometimes I participated
+                            in competition of Sakai.
+                        </p>
+                    </div>
+                </div>
+                <div class="history-content">
+                    <img src="./asset/History/Mountain.jpg" alt="Mountain" class="post-img">
+                    <div class="content-explanation">
+                        <h4>3.Mountain climbing</h4>
+                        <p>I loved nature thus together with my father, i used to climb a lot of mountains.
+                        </p>
+                    </div>
+                </div>
+                <div class="history-content">
+                    <img src="./asset/History/tohoku.png" alt="tohoku" class="post-img">
+                    <div class="content-explanation">
+                        <h4>4.Tohoku University, Sendai</h4>
+                        <p>I studied chemistry at Tohoku University as a bachelor.
+                        </p>
+                    </div>
+                </div> -->
 
         </section>
 
@@ -90,6 +192,8 @@
     <!-- JS script -->
     <script src="./js/Jquery3-5-1.js"></script>
     <script src="./js/all.js"></script>
+    <!-- slick carousel -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="./js/main.js"></script>
 
 </body>
