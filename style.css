@@ -160,7 +160,6 @@ main .History{
     background-repeat: none;
     width: 100%;
     height: 100vh;
-    border:1px solid red;
     display: flex;
     flex-direction: column;
 }
@@ -194,7 +193,6 @@ main .History{
     width: 88%;
     height: 500px;
     margin: 0 auto;
-    border: 1px dashed red;
     overflow: hidden;
     display: block;
 }
@@ -223,6 +221,120 @@ main .History{
     margin-top: 0;
     height: 200px;
     padding: 0px 10px;
+}
+
+/* Articles */
+main .article{
+    display: flex;
+    flex-direction: column;
+    background: url(../asset/article.jpg);
+    background-size: 100%;
+    width: 100%;
+    height: 500vh;
+}
+
+.article-title{
+    text-align: center;
+    padding: 0;
+    margin: 30px 0 60px 0;
+    color: white;
+}
+
+.art-wrap{
+    display: flex;
+    flex-direction: column;
+    width: 86%;
+    margin: 0 auto;
+}
+
+.art{
+    position: relative;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 1s;
+}
+
+.art.show{
+    transform: none;
+    opacity: 1;
+}
+
+.art:not(:first-of-type){
+    margin-top: 100px;
+}
+
+.art:nth-of-type(odd) .contentsText{
+    right: 0;
+}
+
+.art:nth-of-type(even) img{
+    margin-left: auto;
+}
+
+.art:nth-of-type(even) .contentsText{
+    align-items: flex-start;
+}
+
+.art-img{
+    width: 650px;
+    height: 650px;
+    border-radius: 5px;
+    display: block;
+}
+
+.contentsText{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: absolute;
+    top: 40px;
+
+}
+
+.art-title{
+    color: white;
+    margin-bottom: 30px;
+    white-space: nowrap;
+    font-size: 30px;
+    line-height: 1.4;
+    letter-spacing: .05em;
+    background-color: rgba(20,20,20,0.8);
+    border-radius: 5px;
+    padding: 20px;
+
+}
+
+.date-link{
+    display: flex;
+    padding: 20px;
+    color: white;
+    white-space: nowrap;
+    background-color: rgba(20,20,20,0.65);
+    border-radius: 5px;
+}
+
+.date-link p{
+    margin: 0;
+    padding: 0;
+}
+
+.date-link a{
+    color: white;
+    font-weight: bold;
+}
+
+.date-link a:hover{
+    color: red;
+    font-weight: bold;
+}
+
+.art-sum{
+    line-height: 1.6;
+    color: white;
+    max-width: 340px;
+    padding: 15px;
+    background-color: rgba(20,20,20,0.5);
+    border-radius: 5px;
 }
 
 /* Responsible design */
